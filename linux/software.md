@@ -20,20 +20,3 @@ PS:
 
 Linkers are programs that link together several object modules and libraries to form a single, coherent, program.
 Object modules are the machine code output from an assembler or compiler and contain executable machine code and data together with information that allows the linker to combine the modules together to form a program.
-
-An operating system is a collection of system programs which allow the user to run application software.
-An operating system can make a small amount of physical memory into something appeared like more available memory.
-This "large" memory is called virtual memory. The system divides the memory into easily handled pages and swaps these
-pages onto a hard disk as the system runs. The software does not notice because of another trick, multi-processing.
-
-A process is a program in action, each of this will run a different program. Typing `ps` will show available processes.
-A process will be run in a certain period of time called time-slice. A trick used in multi-processing or scheduling.
-Processes are protected from one another, by giving each process a separate address space which only they have access to.
-
-## Kernel Data Structures
-
-The operating system must keep a lot of information about the current state of the system. As things happen within the system these data structures must be changed to reflect the current reality.
-
-- Linked List
-- Hash Tables, e.g. cache implementation
-- Abstract Interfaces, e.g. network device drivers have interfaces with different implementation for certain routines
